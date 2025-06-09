@@ -246,30 +246,28 @@
       </div>
     </section>
 
-    <section class="hero teaser">
+    <section class="section">
       <div class="container is-max-desktop">
-        <div class="hero-body" style="padding: 0px">
-          <center>
-            <h3 class="title is-3" style="margin-bottom: 0px">
-              Live Demo
-            </h3>
-            <iframe
-              width="640px"
-              height="360px"
-              src="https://www.youtube.com/embed/FLL7vME0pds?si=4r3Tt872gyMbgmc3&amp;mute=1&amp;autoplay=0&amp;loop=1"
-              title="EBS-EKF Overview"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen=""
-            ></iframe>
-            <div class="content has-text-justified">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Results</h2>
+            <div class="hero-body">
+              <img src="./static/images/table1.png" height="100%" />
               <p>
-                EBS-EKF in operation, running in realtime on a Rasberry Pi. Video is recorded at 5x speed.
+                Overview of related works. Color indicates high (green), medium
+                (yellow) and low (red) performance. “s” denotes seconds.
               </p>
-              <p></p>
             </div>
-          </center>
+            <div class="hero-body">
+              <img src="./static/images/table2.png" height="100%" />
+              <p>
+                Metadata and tracking results for our real world dataset.
+                Metrics are reported as (across, about) mean squared difference
+                in arcseconds. Colors rank methods with the first (green),
+                second (yellow), or third (red) lowest across and about means.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -311,6 +309,33 @@
           </center>
         </div>
         <hr />
+      </div>
+    </section>
+
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body" style="padding: 0px">
+          <center>
+            <h3 class="title is-3" style="margin-bottom: 0px">Live Demo</h3>
+            <iframe
+              width="640px"
+              height="360px"
+              src="https://www.youtube.com/embed/FLL7vME0pds?si=4r3Tt872gyMbgmc3&amp;mute=1&amp;autoplay=0&amp;loop=1"
+              title="EBS-EKF Overview"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen=""
+            ></iframe>
+            <div class="content has-text-justified">
+              <p>
+                EBS-EKF in operation, running in realtime on a Rasberry Pi.
+                Video is recorded at 5x speed.
+              </p>
+              <p></p>
+            </div>
+          </center>
+        </div>
       </div>
     </section>
 
