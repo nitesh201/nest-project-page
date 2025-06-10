@@ -198,6 +198,7 @@
             <h3 class="title is-3" style="margin-bottom: 0px">
               EBS-EKF Overview
             </h3>
+            <br />
             <iframe
               width="640px"
               height="360px"
@@ -256,6 +257,11 @@
               <p>
                 Overview of related works. Color indicates high (green), medium
                 (yellow) and low (red) performance. “s” denotes seconds.
+                Compared to previous works, ours is the only one to 1) be
+                evaluated on night sky data that is open source, 2) incorporate
+                3D state estimation, 3) require absolute orientations updates
+                only on initialization, and 4) have subpixel centroiding
+                precision
               </p>
             </div>
             <div class="hero-body">
@@ -265,6 +271,10 @@
                 Metrics are reported as (across, about) mean squared difference
                 in arcseconds. Colors rank methods with the first (green),
                 second (yellow), or third (red) lowest across and about means.
+                Across all of the data runs, EBS-EKF is a magnitude or more
+                accurate than the next closest algorithm. The
+                intensity-dependent offset usually improves the accuracy due to
+                the higher centroiding precision.
               </p>
             </div>
           </div>
@@ -306,6 +316,11 @@
                 ></iframe>
               </div>
             </div>
+            <p>
+              Examples of recorded tracks from our dataset. From left to right,
+              these correspond to "SmoothSine", "Velocity Sweep 1", "Multipose
+              1" in the above table, respectively.
+            </p>
           </center>
         </div>
         <hr />
@@ -317,6 +332,7 @@
         <div class="hero-body" style="padding: 0px">
           <center>
             <h3 class="title is-3" style="margin-bottom: 0px">Live Demo</h3>
+            <br />
             <iframe
               width="640px"
               height="360px"
@@ -329,10 +345,23 @@
             ></iframe>
             <div class="content has-text-justified">
               <p>
-                EBS-EKF in operation, running in realtime on a Rasberry Pi.
-                Video is recorded at 5x speed.
+                A large advantage of the EBS-EKF is that it is lightweight and
+                can be run on many different systems. Here is an example of
+                EBS-EKF in operation, running in realtime on a Rasberry Pi with
+                an update speed of 350Hz. Video is recorded at 5x speed for
+                brevity. Code to run EBS-EKF is provided in the Gitlab
               </p>
               <p></p>
+            </div>
+            <div class="hero-body">
+              <img src="./static/images/demo_setup.png" height="100%" />
+              <p>
+                Pictured is our demo setup. A Prophesee EVK4-HD event camera and
+                a Rasberry Pi are mounted on a motorized tripod. A lens with a
+                focal length of 35mm is used in our setup, and the EBS-EKF
+                software is running on the Rasberry Pi with an update speed of
+                350Hz.
+              </p>
             </div>
           </center>
         </div>
