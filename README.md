@@ -1,6 +1,6 @@
 # nest-project-page
 
-This is the repository that contains source code for the [NEST project page](https://nitesh201.github.io/nest-project-page/).
+This is the repository that contains source code for the [NEST project page](https://kitware.github.io/nest-project-page/).
 
 The template used is based of the Nerfies project page:
 ```
